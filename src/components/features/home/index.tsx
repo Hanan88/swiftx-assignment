@@ -27,7 +27,6 @@ const Home = () => {
     }
   }`;
   const { loading, error, data } = useQuery(ALL_PRODUCTS);
-  console.log(data?.category?.products, 'data From Graph');
 
   return (
     <div className='container d-flex justify-content-start align-items-start flex-wrap'>
