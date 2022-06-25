@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 
 const CurrencyDropdown = () => {
-  const [currency, setCurrency] = useState<string>('');
 
   return (
     <>
