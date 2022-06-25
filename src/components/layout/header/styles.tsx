@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 const BarApp = styled.header`
     display: flex;
-    padding: 0 30px;
+    padding: 20px 30px;
     align-items: center;
     justify-content: space-between;
+`;
+
+const Logo = styled.div`
+    color: #52D67A;   
 `;
 
 const ItemList = styled.li`
@@ -13,4 +17,8 @@ const ItemList = styled.li`
     margin-right: 30px;
 `;
 
-export { BarApp, ItemList };
+const Width = styled.div`
+    width: 125px;   
+`;
+
+export { BarApp, ItemList, Width, Logo };

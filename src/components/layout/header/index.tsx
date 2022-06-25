@@ -1,23 +1,30 @@
 import React from 'react';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { BarApp, ItemList } from './styles';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { BarApp, ItemList, Width, Logo } from './styles';
+import CurrencyDropdown from './CurrencyDropdown';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <BarApp>
-      <div>
-        <ul>
-          <ItemList>women</ItemList>
-          <ItemList>men</ItemList>
-          <ItemList>kids</ItemList>
-        </ul>
-      </div>
-      <div><ShoppingBagIcon/></div>
-      <div>
-        <ShoppingCartIcon />
-      </div>
-    </BarApp>
+    <div className='container'>
+      <BarApp>
+        <div>
+          <ul>
+            <ItemList><Link to='/'>women</Link></ItemList>
+            <ItemList><Link to='/'>men</Link></ItemList>
+            <ItemList><Link to='/'>kids</Link></ItemList>
+          </ul>
+        </div>
+        <Logo>
+          <ShoppingBagIcon className='fs-1' />
+        </Logo>
+        <Width>
+          <CurrencyDropdown />
+          <Link to="/"><ShoppingCartOutlinedIcon /></Link>
+        </Width>
+      </BarApp>
+    </div>
   );
 };
 
