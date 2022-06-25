@@ -11,9 +11,9 @@ const Header = () => {
       <BarApp>
         <div>
           <ul>
-            <ItemList><Link to='/'>women</Link></ItemList>
-            <ItemList><Link to='/'>men</Link></ItemList>
-            <ItemList><Link to='/'>kids</Link></ItemList>
+            <ItemList><Link to='/'>All Categories</Link></ItemList>
+            <ItemList><Link to='/'>Clothes</Link></ItemList>
+            <ItemList><Link to='/'>Tech</Link></ItemList>
           </ul>
         </div>
         <Logo>
